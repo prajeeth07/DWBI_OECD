@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "OECD", "OECD\OECD.dtproj", "{FCC1157A-BB49-42D6-8527-4D9A220F237F}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "OECD_Cu_EU", "..\OECD_Cu_EU\OECD_Cu_EU\OECD_Cu_EU.dwproj", "{846CF3D1-E1F9-45DD-BE6E-E05A9F605184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCC1157A-BB49-42D6-8527-4D9A220F237F}.Development|Default.ActiveCfg = Development
+		{FCC1157A-BB49-42D6-8527-4D9A220F237F}.Development|Default.Build.0 = Development
+		{846CF3D1-E1F9-45DD-BE6E-E05A9F605184}.Development|Default.ActiveCfg = Development
+		{846CF3D1-E1F9-45DD-BE6E-E05A9F605184}.Development|Default.Build.0 = Development
+		{846CF3D1-E1F9-45DD-BE6E-E05A9F605184}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60B4CAF2-D235-4272-8AEA-1CE35A8ACBC2}
+	EndGlobalSection
+EndGlobal
