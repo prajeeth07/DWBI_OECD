@@ -1,0 +1,1881 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.0627.2230                               -->
+<workbook original-version='18.1' source-build='2018.2.0 (20182.18.0627.2230)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='OECD_Cu_EU' inline='true' name='msolap.02n18s407ei7g11f5n4xo0urncys' version='18.1'>
+      <connection authentication='sspi' class='msolap' convert-to-extract-prompted='no' dbname='OECD_Cu_EU' filename='' server='MOLAP' tablename='OECD_DSV'>
+        <metadata-records>
+          <metadata-record class='dimension'>
+            <remote-name>[Dim EU OECD Countries]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Dim EU OECD Countries]</local-name>
+            <remote-alias>[Dim EU OECD Countries]</remote-alias>
+            <caption>Dim EU OECD Countries</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Dim EU OECD Countries].[Hierarchy]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Dim Infant Mortality]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Dim Infant Mortality]</local-name>
+            <remote-alias>[Dim Infant Mortality]</remote-alias>
+            <caption>Dim Infant Mortality</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>1255</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Dim Infant Mortality].[Infant Mortality ID]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Dim Pollution]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Dim Pollution]</local-name>
+            <remote-alias>[Dim Pollution]</remote-alias>
+            <caption>Dim Pollution</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>221</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Dim Pollution].[Pollution ID]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Dim Poverty]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Dim Poverty]</local-name>
+            <remote-alias>[Dim Poverty]</remote-alias>
+            <caption>Dim Poverty</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>243</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Dim Poverty].[Poverty ID]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Dim Time]</remote-name>
+            <remote-type>0</remote-type>
+            <local-name>[Dim Time]</local-name>
+            <remote-alias>[Dim Time]</remote-alias>
+            <caption>Dim Time</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Dim Time].[Hierarchy]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='dimension'>
+            <remote-name>[Measures]</remote-name>
+            <remote-type>1</remote-type>
+            <local-name>[Measures]</local-name>
+            <remote-alias>[Measures]</remote-alias>
+            <caption>Measures</caption>
+            <local-type>real</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>10</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DEFAULT_HIERARCHY'>&quot;[Measures]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Dim EU OECD Countries].[Country]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Dim EU OECD Countries].[Country]</local-name>
+            <parent-name>[Dim EU OECD Countries]</parent-name>
+            <remote-alias>[Dim EU OECD Countries].[Country]</remote-alias>
+            <caption>Country</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Dim EU OECD Countries].[Country].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Dim EU OECD Countries].[Country ID]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Dim EU OECD Countries].[Country ID]</local-name>
+            <parent-name>[Dim EU OECD Countries]</parent-name>
+            <remote-alias>[Dim EU OECD Countries].[Country ID]</remote-alias>
+            <caption>Country ID</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Dim EU OECD Countries].[Country ID].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Dim EU OECD Countries].[Hierarchy]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Dim EU OECD Countries].[Hierarchy]</local-name>
+            <parent-name>[Dim EU OECD Countries]</parent-name>
+            <remote-alias>[Dim EU OECD Countries].[Hierarchy]</remote-alias>
+            <caption>Hierarchy</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Dim EU OECD Countries].[Hierarchy].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>true</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim EU OECD Countries].[Country].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Dim EU OECD Countries].[Country].[(All)]</local-name>
+            <parent-name>[Dim EU OECD Countries].[Country]</parent-name>
+            <remote-alias>[Dim EU OECD Countries].[Country].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim EU OECD Countries].[Country].[Country]</remote-name>
+            <local-name>[Dim EU OECD Countries].[Country].[Country]</local-name>
+            <parent-name>[Dim EU OECD Countries].[Country]</parent-name>
+            <remote-alias>[Dim EU OECD Countries].[Country].[Country].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Country</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Dim EU OECD Countries].[Country] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim EU OECD Countries].[Country ID].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Dim EU OECD Countries].[Country ID].[(All)]</local-name>
+            <parent-name>[Dim EU OECD Countries].[Country ID]</parent-name>
+            <remote-alias>[Dim EU OECD Countries].[Country ID].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim EU OECD Countries].[Country ID].[Country ID]</remote-name>
+            <local-name>[Dim EU OECD Countries].[Country ID].[Country ID]</local-name>
+            <parent-name>[Dim EU OECD Countries].[Country ID]</parent-name>
+            <remote-alias>[Dim EU OECD Countries].[Country ID].[Country ID].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Country ID</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Dim EU OECD Countries].[Country ID] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim EU OECD Countries].[Hierarchy].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Dim EU OECD Countries].[Hierarchy].[(All)]</local-name>
+            <parent-name>[Dim EU OECD Countries].[Hierarchy]</parent-name>
+            <remote-alias>[Dim EU OECD Countries].[Hierarchy].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim EU OECD Countries].[Hierarchy].[Country ID]</remote-name>
+            <local-name>[Dim EU OECD Countries].[Hierarchy].[Country ID]</local-name>
+            <parent-name>[Dim EU OECD Countries].[Hierarchy]</parent-name>
+            <remote-alias>[Dim EU OECD Countries].[Hierarchy].[Country ID].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Country ID</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>23</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Dim EU OECD Countries].[Country ID] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Dim Infant Mortality].[Infant Mortality ID]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Dim Infant Mortality].[Infant Mortality ID]</local-name>
+            <parent-name>[Dim Infant Mortality]</parent-name>
+            <remote-alias>[Dim Infant Mortality].[Infant Mortality ID]</remote-alias>
+            <caption>Infant Mortality ID</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>1255</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Dim Infant Mortality].[Infant Mortality ID].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Infant Mortality].[Infant Mortality ID].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Dim Infant Mortality].[Infant Mortality ID].[(All)]</local-name>
+            <parent-name>[Dim Infant Mortality].[Infant Mortality ID]</parent-name>
+            <remote-alias>[Dim Infant Mortality].[Infant Mortality ID].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Infant Mortality].[Infant Mortality ID].[Infant Mortality ID]</remote-name>
+            <local-name>[Dim Infant Mortality].[Infant Mortality ID].[Infant Mortality ID]</local-name>
+            <parent-name>[Dim Infant Mortality].[Infant Mortality ID]</parent-name>
+            <remote-alias>[Dim Infant Mortality].[Infant Mortality ID].[Infant Mortality ID].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Infant Mortality ID</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1255</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Dim Infant Mortality].[Infant Mortality ID] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Dim Pollution].[Pollution ID]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Dim Pollution].[Pollution ID]</local-name>
+            <parent-name>[Dim Pollution]</parent-name>
+            <remote-alias>[Dim Pollution].[Pollution ID]</remote-alias>
+            <caption>Pollution ID</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>221</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Dim Pollution].[Pollution ID].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Pollution].[Pollution ID].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Dim Pollution].[Pollution ID].[(All)]</local-name>
+            <parent-name>[Dim Pollution].[Pollution ID]</parent-name>
+            <remote-alias>[Dim Pollution].[Pollution ID].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Pollution].[Pollution ID].[Pollution ID]</remote-name>
+            <local-name>[Dim Pollution].[Pollution ID].[Pollution ID]</local-name>
+            <parent-name>[Dim Pollution].[Pollution ID]</parent-name>
+            <remote-alias>[Dim Pollution].[Pollution ID].[Pollution ID].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Pollution ID</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>221</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Dim Pollution].[Pollution ID] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Dim Poverty].[Poverty ID]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Dim Poverty].[Poverty ID]</local-name>
+            <parent-name>[Dim Poverty]</parent-name>
+            <remote-alias>[Dim Poverty].[Poverty ID]</remote-alias>
+            <caption>Poverty ID</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>243</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Dim Poverty].[Poverty ID].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Poverty].[Poverty ID].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Dim Poverty].[Poverty ID].[(All)]</local-name>
+            <parent-name>[Dim Poverty].[Poverty ID]</parent-name>
+            <remote-alias>[Dim Poverty].[Poverty ID].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Poverty].[Poverty ID].[Poverty ID]</remote-name>
+            <local-name>[Dim Poverty].[Poverty ID].[Poverty ID]</local-name>
+            <parent-name>[Dim Poverty].[Poverty ID]</parent-name>
+            <remote-alias>[Dim Poverty].[Poverty ID].[Poverty ID].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Poverty ID</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>243</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Dim Poverty].[Poverty ID] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Dim Time].[Hierarchy]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Dim Time].[Hierarchy]</local-name>
+            <parent-name>[Dim Time]</parent-name>
+            <remote-alias>[Dim Time].[Hierarchy]</remote-alias>
+            <caption>Hierarchy</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <default>true</default>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Dim Time].[Hierarchy].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>true</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Dim Time].[Year ID]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Dim Time].[Year ID]</local-name>
+            <parent-name>[Dim Time]</parent-name>
+            <remote-alias>[Dim Time].[Year ID]</remote-alias>
+            <caption>Year ID</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Dim Time].[Year ID].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='hierarchy'>
+            <remote-name>[Dim Time].[Years]</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Dim Time].[Years]</local-name>
+            <parent-name>[Dim Time]</parent-name>
+            <remote-alias>[Dim Time].[Years]</remote-alias>
+            <caption>Years</caption>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='ALL_MEMBER'>&quot;[Dim Time].[Years].[All]&quot;</attribute>
+              <attribute datatype='string' name='HIERARCHY_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='boolean' name='HIERARCHY_USER'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Time].[Hierarchy].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Dim Time].[Hierarchy].[(All)]</local-name>
+            <parent-name>[Dim Time].[Hierarchy]</parent-name>
+            <remote-alias>[Dim Time].[Hierarchy].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Time].[Hierarchy].[Year ID]</remote-name>
+            <local-name>[Dim Time].[Hierarchy].[Year ID]</local-name>
+            <parent-name>[Dim Time].[Hierarchy]</parent-name>
+            <remote-alias>[Dim Time].[Hierarchy].[Year ID].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Year ID</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Dim Time].[Year ID] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Time].[Year ID].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Dim Time].[Year ID].[(All)]</local-name>
+            <parent-name>[Dim Time].[Year ID]</parent-name>
+            <remote-alias>[Dim Time].[Year ID].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Time].[Year ID].[Year ID]</remote-name>
+            <local-name>[Dim Time].[Year ID].[Year ID]</local-name>
+            <parent-name>[Dim Time].[Year ID]</parent-name>
+            <remote-alias>[Dim Time].[Year ID].[Year ID].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Year ID</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Dim Time].[Year ID] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Time].[Years].[(All)]</remote-name>
+            <remote-type>all</remote-type>
+            <local-name>[Dim Time].[Years].[(All)]</local-name>
+            <parent-name>[Dim Time].[Years]</parent-name>
+            <remote-alias>[Dim Time].[Years].[(All)].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>(All)</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='level'>
+            <remote-name>[Dim Time].[Years].[Years]</remote-name>
+            <local-name>[Dim Time].[Years].[Years]</local-name>
+            <parent-name>[Dim Time].[Years]</parent-name>
+            <remote-alias>[Dim Time].[Years].[Years].[MEMBER_UNIQUE_NAME]</remote-alias>
+            <caption>Years</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>6</approx-count>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;NAME( [$Dim Time].[Years] )&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Poverty Rate]</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Poverty Rate]</local-name>
+            <remote-alias>[Measures].[Poverty Rate]</remote-alias>
+            <caption>Poverty Rate</caption>
+            <family>OECD Fact</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[OECD Fact].[Poverty Rate]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Infant Mortality Rate]</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Infant Mortality Rate]</local-name>
+            <remote-alias>[Measures].[Infant Mortality Rate]</remote-alias>
+            <caption>Infant Mortality Rate</caption>
+            <family>OECD Fact</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[OECD Fact].[Infant Mortality Rate]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Pollution Rate]</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pollution Rate]</local-name>
+            <remote-alias>[Measures].[Pollution Rate]</remote-alias>
+            <caption>Pollution Rate</caption>
+            <family>OECD Fact</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[OECD Fact].[Pollution Rate]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Population ID]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population ID]</local-name>
+            <remote-alias>[Measures].[Population ID]</remote-alias>
+            <caption>Population ID</caption>
+            <family>OECD Fact</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[OECD Fact].[Population ID]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Population]</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Population]</local-name>
+            <remote-alias>[Measures].[Population]</remote-alias>
+            <caption>Population</caption>
+            <family>OECD Fact</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[OECD Fact].[Population]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Sentiment ID]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sentiment ID]</local-name>
+            <remote-alias>[Measures].[Sentiment ID]</remote-alias>
+            <caption>Sentiment ID</caption>
+            <family>OECD Fact</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[OECD Fact].[Sentiment ID]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Positive]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Positive]</local-name>
+            <remote-alias>[Measures].[Positive]</remote-alias>
+            <caption>Positive</caption>
+            <family>OECD Fact</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[OECD Fact].[Positive]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Negative]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Negative]</local-name>
+            <remote-alias>[Measures].[Negative]</remote-alias>
+            <caption>Negative</caption>
+            <family>OECD Fact</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[OECD Fact].[Negative]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[Sentiment]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sentiment]</local-name>
+            <remote-alias>[Measures].[Sentiment]</remote-alias>
+            <caption>Sentiment</caption>
+            <family>OECD Fact</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[OECD Fact].[Sentiment]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>[Measures].[OECD Fact Count]</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OECD Fact Count]</local-name>
+            <remote-alias>[Measures].[OECD Fact Count]</remote-alias>
+            <caption>OECD Fact Count</caption>
+            <family>OECD Fact</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='MEASURE_DISPLAY_FOLDER'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='SQL_COLUMN_NAME'>&quot;[OECD Fact].[OECD Fact Count]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>OECD Fact</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>OECD Fact</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Dim EU OECD Countries].[Country ID]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Dim EU OECD Countries]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>OECD Fact</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>OECD Fact</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Dim Infant Mortality].[Infant Mortality ID]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Dim Infant Mortality]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>OECD Fact</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>OECD Fact</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Dim Pollution].[Pollution ID]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Dim Pollution]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>OECD Fact</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>OECD Fact</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Dim Poverty].[Poverty ID]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Dim Poverty]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='granularity'>
+            <remote-name>OECD Fact</remote-name>
+            <remote-type>0</remote-type>
+            <remote-alias>OECD Fact</remote-alias>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DIMENSION_GRANULARITY'>&quot;[Dim Time].[Year ID]&quot;</attribute>
+              <attribute datatype='string' name='DIMENSION_UNIQUE_NAME'>&quot;[Dim Time]&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Color_Type' datatype='string' name='[Calculation_524387948533600265]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF [Sentiment] &gt; 0 THEN &apos;green&apos;&#13;&#10;else &apos;red&apos;&#13;&#10;END' />
+      </column>
+      <column approximate-count='23' datatype='string' name='[Dim EU OECD Countries].[Country ID].[Country ID]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column approximate-count='23' datatype='string' name='[Dim EU OECD Countries].[Country].[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column approximate-count='23' datatype='string' name='[Dim EU OECD Countries].[Hierarchy].[Country ID]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column approximate-count='6' datatype='string' datatype-customized='true' name='[Dim Time].[Years].[Years]' role='dimension' type='nominal' user-datatype='date' />
+      <column-instance column='[Dim EU OECD Countries].[Country].[Country]' derivation='None' name='[Dim EU OECD Countries].[Country].[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_524387948533600265]' derivation='None' name='[none:Calculation_524387948533600265:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Infant Mortality Rate]' derivation='None' name='[none:Infant Mortality Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Negative]' derivation='None' name='[none:Negative:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[OECD Fact Count]' derivation='None' name='[none:OECD Fact Count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Pollution Rate]' derivation='None' name='[none:Pollution Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Population ID]' derivation='None' name='[none:Population ID:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Population]' derivation='None' name='[none:Population:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Positive]' derivation='None' name='[none:Positive:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Poverty Rate]' derivation='None' name='[none:Poverty Rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sentiment ID]' derivation='None' name='[none:Sentiment ID:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sentiment]' derivation='None' name='[none:Sentiment:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='ordinal' dim-percentage='0.517857' measure-ordering='ordinal' measure-percentage='0.482143' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Dim EU OECD Countries].[Country].[none:Country:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Greece]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Austria]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Sweden]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Estonia]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Latvia]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Hungary]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Finland]&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Slovenia]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Belgium]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[United Kingdom]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Portugal]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[France]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Luxembourg]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Netherlands]&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Slovak Republic]&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Spain]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Ireland]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Germany]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Czech Republic]&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Poland]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Italy]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Denmark]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_524387948533600265:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;green&quot;</bucket>
+            </map>
+            <map to='#b60a1c'>
+              <bucket>&quot;red&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Poverty Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Population ID:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Pollution Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Negative:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Sentiment ID:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:OECD Fact Count:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Sentiment:qk]&quot;</bucket>
+            </map>
+            <map to='#c3ce3d'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Infant Mortality Rate:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Infant Mortality Rate:qk]:1&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Population:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Positive:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Query1' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Query1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Query1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OECD_Cu_EU' name='msolap.02n18s407ei7g11f5n4xo0urncys' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='msolap.02n18s407ei7g11f5n4xo0urncys'>
+            <column-instance column='[Dim EU OECD Countries].[Country].[Country]' derivation='None' name='[Dim EU OECD Countries].[Country].[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Dim Time].[Years].[Years]' derivation='None' name='[Dim Time].[Years].[none:Years:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Dim Time].[Years].[Years]' derivation='None' name='[Dim Time].[Years].[none:Years:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Infant Mortality Rate]' derivation='None' name='[none:Infant Mortality Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Poverty Rate]' derivation='None' name='[none:Poverty Rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-level='0' user:ui-marker='enumerate'>
+              <groupfilter function='hierarchy-members' hierarchy='[Dim EU OECD Countries].[Country]' />
+              <groupfilter function='member' level='[Dim EU OECD Countries].[Country].[Country]' member='&quot;[Dim EU OECD Countries].[Country].&amp;[Czech Republic]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[Country]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Dim EU OECD Countries].[Country].[Country]' />
+              <groupfilter function='member' level='[Dim EU OECD Countries].[Country].[Country]' member='&quot;[Dim EU OECD Countries].[Country].&amp;[Hungary]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:qk]' included-values='all' />
+          <slices>
+            <column>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]</column>
+            <column>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Poverty Rate:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:ok]' value='*YYYY' />
+            <format attr='text-orientation' field='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:ok]' value='-90' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[msolap.02n18s407ei7g11f5n4xo0urncys].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Years:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Infant Mortality Rate:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Infant Mortality Rate:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Poverty Rate:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Poverty Rate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Infant Mortality Rate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[msolap.02n18s407ei7g11f5n4xo0urncys].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Years:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Infant Mortality Rate:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Infant Mortality Rate:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Poverty Rate:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Poverty Rate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Poverty Rate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[msolap.02n18s407ei7g11f5n4xo0urncys].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Years:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Infant Mortality Rate:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Infant Mortality Rate:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Poverty Rate:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Poverty Rate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>([msolap.02n18s407ei7g11f5n4xo0urncys].[none:Infant Mortality Rate:qk] + [msolap.02n18s407ei7g11f5n4xo0urncys].[none:Poverty Rate:qk])</rows>
+        <cols>([msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[none:Country:nk] / [msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:ok])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Query2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OECD_Cu_EU' name='msolap.02n18s407ei7g11f5n4xo0urncys' />
+          </datasources>
+          <datasource-dependencies datasource='msolap.02n18s407ei7g11f5n4xo0urncys'>
+            <column-instance column='[Dim EU OECD Countries].[Country].[Country]' derivation='None' name='[Dim EU OECD Countries].[Country].[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Dim Time].[Years].[Years]' derivation='None' name='[Dim Time].[Years].[none:Years:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Dim Time].[Years].[Years]' derivation='None' name='[Dim Time].[Years].[none:Years:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pollution Rate]' derivation='None' name='[none:Pollution Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Population]' derivation='None' name='[none:Population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]'>
+            <groupfilter function='hierarchy-members' hierarchy='[Dim EU OECD Countries].[Country]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-level='0' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[Country]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Dim EU OECD Countries].[Country].[Country]' />
+              <groupfilter function='member' level='[Dim EU OECD Countries].[Country].[Country]' member='&quot;[Dim EU OECD Countries].[Country].&amp;[Hungary]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:qk]' included-values='all' />
+          <slices>
+            <column>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]</column>
+            <column>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='wrap' field='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:ok]' value='on' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:ok]' value='*YYYY' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Pollution Rate:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Pollution Rate:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Population:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Population:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Population:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Pollution Rate:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Pollution Rate:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Population:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Population:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Pollution Rate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Pollution Rate:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Pollution Rate:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Population:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Population:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#666666' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[none:Country:nk] / [msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:ok])</rows>
+        <cols>([msolap.02n18s407ei7g11f5n4xo0urncys].[none:Population:qk] + [msolap.02n18s407ei7g11f5n4xo0urncys].[none:Pollution Rate:qk])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Query3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='OECD_Cu_EU' name='msolap.02n18s407ei7g11f5n4xo0urncys' />
+          </datasources>
+          <datasource-dependencies datasource='msolap.02n18s407ei7g11f5n4xo0urncys'>
+            <column-instance column='[Dim EU OECD Countries].[Country].[Country]' derivation='None' name='[Dim EU OECD Countries].[Country].[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_524387948533600265]' derivation='None' name='[none:Calculation_524387948533600265:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pollution Rate]' derivation='None' name='[none:Pollution Rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sentiment]' derivation='None' name='[none:Sentiment:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[Country]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Dim EU OECD Countries].[Country].[Country]' />
+              <groupfilter function='member' level='[Dim EU OECD Countries].[Country].[Country]' member='&quot;[Dim EU OECD Countries].[Country].&amp;[Hungary]&quot;' />
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[none:Country:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Sentiment:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#aa0000</color>
+                <color>#ae0f0f</color>
+                <color>#b22020</color>
+                <color>#b63131</color>
+                <color>#bb4444</color>
+                <color>#bf5656</color>
+                <color>#c36a6a</color>
+                <color>#c77f7f</color>
+                <color>#cc9494</color>
+                <color>#d0aaaa</color>
+                <color>#d4c1c1</color>
+                <color>#d9d9d9</color>
+                <color>#c8dcc8</color>
+                <color>#b7dfb7</color>
+                <color>#a5e3a5</color>
+                <color>#92e692</color>
+                <color>#7fea7f</color>
+                <color>#6ced6c</color>
+                <color>#57f157</color>
+                <color>#42f442</color>
+                <color>#2df82d</color>
+                <color>#16fb16</color>
+                <color>#00ff00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Pollution Rate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Country: &lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Pollution Rate:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Pollution Rate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#666666' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Sentiment:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Calculation_524387948533600265:nk]' />
+              <lod column='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[none:Country:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Sentiment:&#9;</run>
+                <run bold='true'>&lt;[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Sentiment:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c84153' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([msolap.02n18s407ei7g11f5n4xo0urncys].[none:Pollution Rate:qk] + [msolap.02n18s407ei7g11f5n4xo0urncys].[none:Sentiment:qk])</rows>
+        <cols>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[none:Country:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Query1'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='176'>
+            <card mode='checkdropdown' param='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]' type='filter' />
+            <card pane-specification-id='1' param='[msolap.02n18s407ei7g11f5n4xo0urncys].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[none:Country:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Life Expectancy].[Country].[none:Country:qk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Life Expectancy].[Years].[none:Years:qk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Poverty].[Country].[none:Country:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Poverty].[Years].[none:Years:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:qk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Infant Mortality Rate:qk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Poverty Rate:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Query2'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='180'>
+            <card param='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='checkdropdown' param='[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <fields>
+                  <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[none:Country:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;[Dim EU OECD Countries].[Country].&amp;[Hungary]&quot;</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[:Measure Names]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[none:Country:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Life Expectancy].[Country].[none:Country:qk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Life Expectancy].[Years].[none:Years:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Pollution].[Pollution ID].[none:Pollution ID:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:ok]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:qk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Population:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Query3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Calculation_524387948533600265:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[:Measure Names]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim EU OECD Countries].[Country].[none:Country:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[Dim Time].[Years].[none:Years:qk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Calculation_524387948533600265:nk]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Years:qk:1]</field>
+            <field>[msolap.02n18s407ei7g11f5n4xo0urncys].[none:Years:qk:2]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Query1' width='192'>
+      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
+      NTj9pwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Query2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO2dSXBk2XVYzx/y5zwgkZjnAgpVXT032QPZZIuSTYkK2dbCVoQdDocXlu1Q
+      eFzZa+288MreaGNbISvCllaUFrRsSaYGUqTIZhdrQhVQABIzMpHIOfPnzz89L9BdZrGqqzIT
+      ABNIvBPR0R2d/928L/Hv/+/ed+99ihBCIJFcUdR+KyCR9BNpAJIrjTQAyZVGGoDkSiMNQHKl
+      kQYgudLon/1Ho9HA9/1+6nIqXNdF1/WXX/g5fBYNVhTlVDJOM/6iyBiU36KTeSg/vQ/gOW3a
+      nkIkZLxQuNO2UI0QWs/6CcrFY4LRJLpwMB1BKhHDNE0ikQiubeEpAYIBrSNppdt/QGjn/3St
+      Reijf4c6NPfE+FW195ei67pomnaqP9ppDfksZAzKPDzPQ1XVF87jGekHezuUW4Ibc2OIYJJ2
+      s0KtdEwoluTe3Xu88dZbuHYbfIXUaJrNbJbx6XnikWBXyrmWieX47D5+jIZ/ouTMFHfur/LR
+      l99nZ/U2XuZVrk8kOpLnV3fxNv+8Kx0AxPu/0fUYyeDwzONub2+f49whleI+tTYcHO5SrjRw
+      fIXJyUlSQY98rY1brdCwmrSsFo/Xt7r+Yi0YplE5ZnJmkmAwzkgsBqEYo8NJFEVhemaWU75B
+      JZKX8tQbQHgmE/OvMBJXKFbqHK+vEAoFiUR8TLOF4rcpNxzGR0dQKse47TaqHiCsv3i59DzM
+      432Omy7Bpo2KyX5NsJCsUjgqkBzKUD/co+THmB99FV266pJz4hkf4LJS2blP1M51PU6ffg8l
+      lJA+wE+NH4R59OQDXFqED57T9TC/WUALdeZnSAaPvhmAazVZ29xCCUQwfJNaW7C8MM2PVzb4
+      8nvvsLG6QqMNb7z5akebFW72L7Bu/1bXehgf/lu04cXuJyAZCPq2utZDUcaGUxiGilCizCRj
+      OEaUdDKCoihMTk1iBLuLLEkk3dI3A7AqeTZzVTLpYdrtOrlqHdW1qdVq1Bt17t1/xOhoBhkI
+      kpwnfVsC6dEU8xMKQsDy8hItRxDSYGF+AYHC4uIidOGfq6k59KWvd62Hmp7veoxkcBiYKFCt
+      ViOR6N2ZlVGgp8cPwjwudBTId9tsbGSJDo1i+C0qls/C9DjZnT0WF+bZ2lhFBOIszE11tAyy
+      b/8u9Z6c4H9D8N1/0vU4yWDQNx9AoDIzO0v5OE+xYhLy2lTMFvVGA4DMyBj1cpmO0/OE3+M/
+      A/EClPRI3wxAES7rm9ssXl9EURRURcEIRQgZJy8l3/dR8PAub4Kq5BLQvyhQs4EvBEdHZVLx
+      IA2hg1nFNE0Oj47I5/KEEykCMgwkOUcGxgmuVsokYpHuB6o6iqpJJ/inxg/CPC60EwwCs9FA
+      D4ZR8bA9iISC2LaNYRggfKy2QyjU2WaYt/N9rIO/7FqLwPIvol/7WtfjJINBH1MhTI6KJar1
+      JgHh4HgwvzDLJ/ce8fNf+YD83jYbuRpffvfNjuT5pQ3ch3/YtR5q+po0gCtM/zbCQhFE22R8
+      YpR6scFoEEQoxngmhWc3ebi5jy98HM8noMl8aMn50Lc7q1nYY79i0bY8hNdgp1xHMavkcjny
+      5RYfvP9FJifG0VXpBUvOj4FxgsubnxA1t7oep429ijZyQzrBPzV+EOZxwZ3gs0UxIqjqWPcD
+      e6ghkAwO/XOC203WNrbQgzEM0aJqCZYXprj7aIP333mLe3c+IZwaY2l+ujN5639Cq4dUCG3m
+      fSJ/7790PU4yGPTNB9CMCFNjGRTVx/GDTMZCWFqIRDSEQCCEj21ZDMT6THJh6ZsB2PUiW0d1
+      ZiYnsW2TkmkSQNBut7GdNhNT1/BaTbx+KSi5EvRtCaQaEVLhBtW6yeLCLA3bR3MtUskU9aaN
+      qjjMLC11rKASn0Cbea97PUZvdj1GMjg8iQJd9taIzWaTaDTa8/iziAJ5noemddbJ7iLL6CR6
+      ct46nIUM3z9puNZRFCgWiwGw+fghnhrm2sIcmqqA71Bp2KQSJzeX2agTjMQ57d6U8Byy2Syx
+      oTEM0aLSEsxOjbJ/kGNmapJqKY8IpUlFO+s5ZN/9fdR7v92zPp/9RPrk24R/9T/3JGNQwoeD
+      Mo+ewqAuGppTo1AqUcrnGJ8cJX/cplLYp275TGRSWFaTYGKUeuWY8tE+tqeBbvDmq50vJ3zf
+      Z3xqhs3NTTRVJ6orlOsRDo8KTE9NYlaOaEYiHRsAroWwKh1//+ch7PqpZUguD888x+uVEran
+      sLOxia8otJoN8CwcLUpIE9QqZRq1Mm1XUKlUCEWTBA2j696gqgKbGxtcW1pE1wIYuk4gHCUe
+      CaIoCsPDw8iKeMl584wBRCNhPDRu3lhE+IJILEl6eBhhltnPF0kMpRnKjLG/+YhwNEkikSSd
+      TpPssh7XrFVwhcLxcZVYWKHsgGJWadQbHOQLbO8dUTs+wL28bonkEtBhKoRgf2cLYcSZGr+Y
+      rUqqxTzxUO+OifAFIFD1IEo41ZOMQVk7D8o8zjAVQmFqdqFnRZ6PwHM9FFUDBEIINO2kMEVV
+      FXzPR6Cgdehte/n72Ec/7F2bT58D2tAsxlv/sGc5kstFX+sBNrb3aNk+hrAwHVi+Ps/Hd1b4
+      +a98ma3NNYoVi3fefZtOAmH+0UOc2797ar3E9BelAVwh+loPEA4oxIfSmJUWo0nwgjEmRtIo
+      CiTicfxAXB5iJjlX+lgPsEs2X8N1wHOqbBWrKM0q+/v77Ody3H+whu+6MhdIcq4MTj3A4+8R
+      ra72PF4gQICaGCdw45d7kjEozuOgzONq1QPExtDisZ7HCyEQAlRVOZMTDiWXgz7WA5isbWQx
+      IkkMv0XV8llemOLe6iZfePN1NtZWsHyDW69c7+x8gNVvYfZQD/A8Yv/6NmiBM5Eludj0sR4g
+      zNzUOJ7bpu3qjEUMmkInEgqgKAqJeAy7bfdLPckVoW8G4JoVtgsNlhcXsB2LRrtNKBBAAYRw
+      iSbHCPgWjtwJlpwj/esOrWgojsnuQYGFmTEqLYHfrCB8weFRBa9VJTO9gNHhUlwJp1FHzii3
+      X67/rwwDEwWS5wOcnYxBmceFjgIJ32d3e5NoehxDWFRaPtPjGQrHRUZHRhCeTe64xsRYpiN5
+      zoNv0nj0e6fR6NN/K0T/8R+gqAMTIJO8gL79lT2nTXpsiuzGOpoaIBJQKEcCrGd3GB3JsJ3d
+      omS6HRuAaNcQle2zUW4wXoqSDuhfFEjX2N5cZ35piUDAIGwYaOE4Q4kIXrvOzkGBQj6HLfOh
+      JedI394AZrVI21Mol2qEDcGx5TFrVqhWquSro3z00YccHBxi6DIbSHJ+DIwTXM3vENN77/Im
+      hAAhUFQVNX2tJwdwUJzHQZnHhXaCzxq/so1butfz+M+eA4qiYLz/z0E5XUcDyeWgj/UATdY2
+      t3CEhuFbNGzBzevzfHznIV/7ypf4+K//iqHxuY5bI3qHd7DPKBXCeO+fQkdVCJLLTt8W2Hoo
+      QjIaIp1OEgimWMgM4QZjjI8MAZBMJqiVy7IznORc6Ws9wOruMcJXsa0y2UIJmhV2d3c5PMoj
+      fBXPk7e/5HwZGCe4/OjPiRTv9Dz+KR/gS//i01rl7hgU53FQ5tGJEzw4rRFLOcJqu+fxJ7+C
+      gjY027OMi9AO8CxkXOnWiHvbGzTaCteXrz3XDawWC0SGRgiccvHk2Sar61nC8TSGb1K1BEvz
+      k6ysZXnztVvsb6ygZ64xngp3JM/+5HfQTusEByLE/+UPeh4+KE/OQZlHD2FQm1rT59at6xwd
+      7LC6dci16RFKlQZD6RSVSotI0CW7f8jo5ByTmWTPyil6iMW5GTb3criKznBQpeFC4NONr1Qi
+      Qs5ygM4MQCLphZ96juu4joVjOyiqys1br7KztYVQVUrlGteXrxE0QlxfuoZjW6f6Yr9d5/Fe
+      gRvLiziujWXbBI0gqvLpOtzosCeoRHIKfuoNoDI/O87Ofo6A0sZsFHj9zTc5PK4zNz3OzvYu
+      4xOjBI0QmaFTvt48geK12Ts4Znp8mIrlI5oVPNfjIF/ALFWwVRN3NEEn2RCKEUNJTPaukAAC
+      8m1z1RiYKJCsBzg7GYMyjwueCiE42N0mOjSGIdpULJ+JkTSVaoVUMkmpkMdWgoxnhjqS5qx+
+      i+b6H5xCHQGBMNFf+2+9y5BcOp4xgO/+5bcJh+Msv/E2ZrlAejhDpVImFEmgqwJNVagf71F0
+      Y8xNjbC5vkZmOEMqEaNUMxkZTndUUehaJpFkhp3sBqqiEtIVSgG4/3Cdr37wLkINUNzfI5MZ
+      6shKRfMYP9d7LhAAgcjpxksuHc/cW8L3QQtQ3HnMVq5AOneIHxpCyx+jaZCKBrGsNno0ycZ6
+      FoSgUDjm+CjP2NRMx1+sGUFyG4+YWZijcHBM3AAtkmBkKA5As1pkaHxqcLL1JBeSZxa8mfFJ
+      YkENFI14YojJsQy18jGoAXy7RXb3AFXVOD7KYYTCqKqKqqoYukKhWO64laFZPqJuC2pVE0Nz
+      yJs2SrNCqVTi4ChPLl+iUatxebfmJJeBlzvB7ToHDZgcjv+MVOqNysE6cdH78Ua+EKCoBKbe
+      6lnGoDiPgzKPs3GCg3Emuzv9qC8Is4hXf9z7eCFADcApDEBy+eh7PYCvGBiiRb0tuLE4xyf3
+      V/nql95jY22FStPj7Xfe6Cgz39v7Ie0zSIUIvvX3TydDcqno6/kA6USUtqLjNAPMRcEJRhlJ
+      Jz5tjRilUKugCuRheZJzo2/1AGbxgLW9IsFAGNuqsFOsoLQa5HI5jorHNJouBh7OQGzTSS4q
+      fdsJ9n0P23ZQNQ1dVfB8UFVwHBdN0xHi5PywQIdOUOnBHxPJfb9nfQSAZhD+2r/vWcagOI+D
+      Mo8LvROsqhqh0P9f3X9Wf6Jpn6nUnWraxFsEr73bsz6+8JFrratH/zrD2S3W1jeJpjIYfotK
+      66Qe4OHjLK/fuolr1VnfK3Fzaa4jec7d36PR53oAyeWjbz6AogdZvDZPo1ahbnokdUHVclCU
+      kyNTN7f3ce1Wv9STXBH6ZgDCNlnL7rN8fRHP83A9j2AojKaAb9ep1Ez29w9ka0TJudK3JZBt
+      2+C7HOSKjGXiVFoCmhXstk2+6vDeu+9QLlc6b42oGWD0fkYYgCKT4a4csh7gU2Q9wNPjB2Ee
+      FzoKBILiUZ5QfAhdODRtQToVp9FsEItGKRby2EJnYrTD8wHW/xRz649OpQ96iMjf+U+nkCG5
+      bPQxFcLEVXQ21tfRFIGmgKJMcvfBGh996T02s1ssXH+lY3mito+3/d3TKSWXQFeO/p0PEAxT
+      O84zNTtF0IgxHI2hhOOMppOAwsL8PLubWdx+KSi5EvQ1FaLY8mg22mhKi/26idqsclw45vDo
+      iGKhiBYK909ByZXgiRNsWRaX2R+u768Sbud6Hn+SDq0RWPhqzzIuQje0s5BxEXQ4CxldOcGa
+      pl1qA1Bx0dzmC69RElNoU+8897Of7A16Gk77R78oMi6CDqeVoSjKS6N6TwwgEAgA8MO//i7B
+      cIKlm7cIagJV1RC+j0BBVcATAoWTcKHveyiKhqIIfN8md1hjYjLTUSjxs3oA9DCGb1Jrw41r
+      09xeWefD977Axv0foI+9yvxoh7H9ve/jvSQVQl/+BsbCB8/9TIZBnx4/CPPoKQwaSw6zOD3K
+      +uo9sruHjM/O49eqKOEI8QBU6zWMSJxkZoJC9j7tQJq43mZkeoat9Q1EQGN6bPilyumhKKPp
+      JDXbx7dizKbAMaIMJ6MoisLszDQ7ltwFlpwvzxiAYRiUKzWikTC33n6fTFyjWk6B4qIIhaHh
+      IYxIkkbjmNT4dVpmlXQ6w+RohsphAbXDtuJOs0zdD7IwM8z64w2ansKYpj1piaioOoYmXWDJ
+      +TIwO8HlzU+ImlsvvEZNTqPPvPfcz+QS6OnxgzCPC74TfLYoRgRVHXvxNaHeu1lLBpP+7QS3
+      m6xtbKEHYxiiRdUSLC9McffRBu+98xYbayuYjsZrr93saC/AXf8TWh04weFf+Y9nMwHJQNC/
+      nWAjwtRYBkX1cfwgk7EQlhYiEQ0BMDMzg6bKCi3J+dI3A7DrRbaO6sxMTmLbJiXTJICg3W5j
+      O21WHq0zNz8rixQl50r/aoKNCKlwg2rdZHFhlobto7kWqWSKesMkk05TLleJRMIdGYESn0D7
+      HAf3yXdmls5GecnAMDBRIFkPcHYyBmUeFzoKJDyHbDZLbGgMQ5wUxc9OjbJ/kGN6apLd7Doi
+      mGB2aqyjN4B99/dp3PvtF16jL/0NQl//zTPRXzIY9M0AfN9nfGqGzc1NNFUnqiuU6xEOjwpM
+      T02SGRvn8VqW6amxjloj4loIq/LCS4T94lwhydWjb06wqsDmxgbXlhbRtQCGrhMIR4lHgiiK
+      gmU2QFW4xEcXSy4B/asHqFVwhcLxcZVYWKHsgGJWadQbHOTzHB2VCIajaDIMJDlHBsYJrhbz
+      xEMvtmdFC6KEnu8oSyf46fGDMI8L7QSDwHNP+n/CSTMsTdPwff/kJhQCzxdoHSbEefn72Ec/
+      fOE12ugrBG796hnoLhkU+loUv7G9R8v2MYSF6cDy9Xk+vrPCL3z1QwqH2zzaLfPV99/uSJ5/
+      9BDn9u++8Bqx/A1pAJKn6Ov5AOGAQnwojVlpMZoELxhjYiSN75is7xTQhI/rC3SZEiE5J/rm
+      BDcLu2TzNVwHPKfKVrGK0qyyv7/P4XGdG8uLhEJBmQohOVcGxgkuP/4e0erqC69R0wvo137u
+      uZ9JJ/jp8YMwjwvuBJ8tSmwMLf6S+mF1YKYrOSP6WA9gsraRxYgkMfwWVctneWGKe6ubfPHN
+      11m592OMxAhL89OdyVv9FubLzgcIpYj/xnfOQHvJoNDHeoAwc1PjeG6btqszFjFoCp1IKIBA
+      YDs2ruN0fPC2RNILfTMA16ywXWiwvLiA7Vg02m1CgcCnTq/H/OKreM2abI0oOVf6lwynaCiO
+      ye5BgYWZMSotgd+sIHzB4VEN1akzOrtAoEN5SjiNOnLzxdcEL/Zp95KfPU+iQI1G40kk5DLS
+      bDaJRqM9jz+LKNBFaAd4FjI6iZ6ctw5nIcP3fRRF6SwKFIudRFC2NlaxfYOl6wuoLxAihKDR
+      bBKP9XYqi/B9drc3iabHMYRFpeUzPZ6hcFxkNJPBrJfxAnHi4c7eAc6Db6I++j2C7/+znnZ7
+      ZRj06fGDMI+ewqC+arC8uEDhcI9yy6NV3EFLzTEc8qlagol0mL1cifHpWXzHonqco62EWJzr
+      LFrzRDmnTXpsiuzGOpoaIBJQKEcCrGd3GMlkKB5kaSevd2wAol1DVLYR7XpXekiuNs887gq5
+      PdY2tnFcF891GcqMMjc7Tq3pkFA8jmo15ubnqVSrFEtFmk2T3d3drr9Y0zW2N9eZX1oiEDAI
+      GwZaOM5QIoKiKIyNj8tjeyXnzjMGEI/FwPfRdB3X80glhzjYzxMOQsnxGUmkCAR04tEIyUQc
+      UEgmu284ZVaLtD2FcqlG2BAcWy6qWaFaqXKQL7C1m6NytI88JFJyngxMKkQ1v0NMd1CjmZ46
+      wEkf4OnxgzCPTnyAgek+61e2cdf+N355u9+qSC4RfawHODkfwBEahm/RsAU3r8/z8Z2HfO0r
+      X2JjdYVy3eGdd9/qqCjeO7yDffu3UEIJtIk3zl1/yWDQ13qAZDSEb0Ro10MsJMANxhgfGUJR
+      YHg4jRewB+cVJbmQ9LUeYHX3GOGr2FaZbKEEzQq7u7vs53J8cvseihAyF0hyrgyME1x+9OdE
+      infQFz5Cm3yr6/HSCX56/CDM40rVA6jDiwTG5lEiQ/1WRXKJ6NsSyLNNVlYekN09ZH97g5XV
+      dey2yY/vPUAIwfrqAx6ubXS8BHIefJPmb/8KzsofnqveksGibwag6CEW52awzDpmW2E4qNFw
+      IaCfvLIS8Rhty5Y+gORc6ZsB+O06j/cK3FhexHFtLNsmaARRFRDCIz40juqacidYcq70bx/A
+      Eyhem72DY6bHh6lYPqJZwXM9Do9K2I0KQxMzBDr0wxQjhpKYRDF6T4mWXD0GJgokzwc4OxmD
+      Mo8LngohONjdotpo0apXOCyUAKhUP21xLlyOi+WOpTmr36L5P/4Bzur/Og9lJQNK/2qCLZNI
+      MsNOdoPN7QPMYp5SpcTdlTVAsJvdZGv3oGN5onmMn7uHMIvnp7Rk4OhjV4ggud0tZhbmMIww
+      8VAILZJgZCiO166zvpOnWMhjSy9Yco7073yA8hF1W1CrmhiaQ960UZoVSqUS+arDz3/tq7z6
+      yjKGLrOBJOfHwDjBlYN14qKOkpxCjY12PV46wU+PH4R5XHAn+GwRZhHv6AHCLPVbFckloo9O
+      cJOVlQfcf/iYtZW7/Oj2HRq1Cn/xV3+NEIIf/eB7rG/tdSzP2/sh7T/7D3j7H5+j1pJBo6/1
+      AOlElLai4zQDzEXBCUYZSZ/E8qORCI1aDZ8Bek1JLhz9c4KLB6ztFQkGwthWhZ1iBaXVIJfL
+      USgVCRgRPFvmAknOl745wb7vYdsOqqahqwqeD6oKjuOiaToIH0XV0PXOOoOVHvwxkdz30Zd/
+      CX3mvR70kU7wT44fhHl04gQPTmvEWolI4CU3byCMogef+5Fsjfj0+CvbGvHh/R9jxDOMppPE
+      4yfNZJ12k7olSCef1wbRpVQ0SQ93l4fj2S3W1jeJpjIYfotKS7A0P8nDx1lee+UGh9tr6ENz
+      jCZDHcmzP/kd1JecDxD8+m9ivPZ3n/uZfAM8PX4Q5tFTRVit0WR2dIZyuUK5kKNSNxkbH6Hl
+      6FSOdvG0KEq7Tt10mbs2wcH+IVog3bUBKHqQxWvzrG/tEVB1kgGFquWgKCcrslhI56hld2wA
+      EkkvPPO4C0fjpBIxms0mPjpLsxO0bBvfsyiXm+wf7KEFI0wPJTgsV1hcXiLQ4Vm+P4mwTday
+      +yxfX8TzPFzPIxgKoymgKAqhkLzxJefPM2+AmZlZwqEg4+Pj6JqKEQwwHAgjUBDtFiPRJKl4
+      hAAQNVR2t/cZzkx0/cW2bYPvcpArMpaJU2kJaFaw2zYH+QLNYom20sQdTdBRNoRmgPHiTtWK
+      2ulpA5KrwsCkQsh6gLOTMSjzuOBdIQTFozyh+BC6cGjagnQqTqPZIBaNUq+WcQkwlOzsVBdn
+      /U8xt/7ohdcY7/wj9PmvnIXykgGhj60RTVxFZ2N9HU0Rn679J7n7YI2PvvQ+TdOikN8j/tYb
+      HSkpavt429994TX+8i+ejfKSgaF/9QDBMLXjPFOzUwSNGMPRGEo4zmj6pLOzZ5ukxiYGp3GR
+      5ELS11SIYsuj2WijKS326yZqs8px4ZiDfI6d3TytZpPLuzUnuQwMjBNc2V0h5hReeI2aWUZN
+      PD9iJZ3gp8cPwjwuuBN8xng2wqq++Brf+dnoIrk09P18APQwhm9Sa8ONa9PcXlnnw/e+wMba
+      CvUWvPnWqx2t09yt72B1kgqRmj0T/SWDQd98AD0UZTSdJBTSQY0xm4rhGFGGk9EnrRFt15Xn
+      5EnOlb4ZQKucY+OwwlAyRbtd47BSQ3UsyuUy1XoVx9MwFBdbesGSc6RvSyAjlub6nIGu6Szf
+      WKbtCgwNbt64iaYZJJIxUsMZgh2aqDq0gH7jl198TXLmDDSXDBIDEwWqVavEEy/bNf783HAZ
+      BXp6/CDM40JHgXynzfrmJtHU6Ek9gOVzbWacja09lpeu4dlNsvtllhY6O4Hevv3faZyiHkBy
+      NembAQhVY252jo2tbTQlQMyAimlhtkyEEGS39jAd6QBIzpf+HZDh2Tze3GHx+uKT/2eEIgQD
+      Gr5d57hU4/DgULZGlJwrfXsDWKaJED75fJl0MkTF8kmYVVqtFvmqwwcfvEuxWJStESXninSC
+      P0U6wU+PH4R5XGgnGASNWo1AKIqKS9sVxCJhrLZFKBikUavhopJ66U19grv1Haz9P3vhNYHX
+      f62nlimSwaWv9QClap3Kzj6acPF9mJ2f4fa9R/zch++zuvqIqfnrHcvzy1nclxyOoc1+ANIA
+      JD9BH1MhIrhmjfHJMYLBBBOpBCIUYyyTAhTGRkfY29rG7ZeCkitB3wygWdjjsGZjtVzwG+xU
+      GihmlXw+z+FRnmajhR4Myr6gknPliRPsOA6X2R+u7dwl0tx+4TXqxJuon5MN+tncL3s3tLOQ
+      cRF0OAsZvu+/NKjxxAfwPO9SG4CPjqe/+IhUr7AOhfXnfnYWBtDJD34ZZPjCR1XOQQdVRZ//
+      ascyPM87lQ5dRYE+a0T1yQ+/T3J0msW5zlIQesVtN1nb2EILxjB8k6olWF6Y4u6jDd7/wttk
+      V35EYOwVZjKdnfvb3PsOvCQV4kWcRdr1WSzXLoKMc9NBDxL+Vz/qWEZfwqBmy2RIVbnzyQ8Y
+      nlzgaGsVxxgirLZo2jA7mqZk2oRUj52dPW699xETqXDXymlGhMnRYY7rFp4XZioObT1MMnYi
+      a2pynN326Z4AEsnLeMZQh0cnWZiZJDaUYXpIx9YTOJZJLDnM9MQIVttmbHyMltlifmmJqNHb
+      Gs2uH5PN15gcH6NtNyg2GwSET6vVwrJtWqZJyzTxL++qTHIJeOYNsDA/D8D01BQYBoszNqFY
+      HCOgoaCgayqF4yK3Xn+Do0KJSKi3doNqMMZIwqLZarN0bZ6mLdB9m5HMCK2WRZsw6ZBACDpa
+      nyiJKbS5D3vS5YTPLK33xZAQ4lQ+xEWRcW46aMapZJ4Hg5MKIVsjnpmMQZnHhU6F8D2H7OYm
+      saExDHFyPsDc1Ci7+4fMzkxzsJvFUcLMzUx09Ey27/xP6nf/67nrLTkdxnu/TvDdX++3Gk/o
+      Xz2AL5icnmVzcxNNDRANKJQbTQrFErMz0wxlxtjayOLPTNCJlyGEwLvEJ9xcFTzPx3U729//
+      WYRB+7oEciwTTw2giJPeoOgBHNsiHAojfJdmyyEW7SzCVCwWT3WmgNwHuFg6nIWMTsZLH+BT
+      zsoAXnYmVScyLsKNc1XmMTid4U7JaaMecDoH+iLJuAg6nIWMTsYPVK5Zbm+b+7GQRZkAAAON
+      SURBVA/Xuto7EL7H/Xt3sV2f/e0NHq5tdp0S0qqXefDgAYeFCtnHD1nf2uvyfGPB3tY69x48
+      pFmvcO/ePUr1VlcSAFyrwYNHG9RLee7evY9pd7eGthpl7ty5T6FcZ2v9EY+zu12f01zM7/Nw
+      bYNWs8a9e3cpVs3uBPgOj1cf8fGP7lAtH3H33n2a7e5ygq16mXv373NYKLO9scra5s7nzmOg
+      DKDWajM/pJOrd/6DCd8jGDJwfRezrZJUfZpd7r4Fo0lmJ0cwm0VcEUezW12mcSskUykcq83+
+      fp7lWzcp5nJdSQDY2tnD92xyxzVevzXH/u5RV+NbjSquEChKG8ePEnAsuuum6rO+nsV3HQ73
+      cyzdukXpqMt5qAGuL18nHotwVKjy+q0FDva6m4dZryEUlXr9GNsLE3Tb2J/3dd1pd7HxXBfT
+      sjH0zpczqm5gaAqg4Lo2bdftKOr0kzQrBfI1h2tz07huG6frlo4CPRglGVJouy6tloXfpQTf
+      blKttzg4OMBq27RaLRS9u03KcHKUN169zuHeIa7bxnbdrm+QcCzJeCJIzbSwWhZeDx5mMbfH
+      0PgUwnexWi0UrbuVerNpMjEzQ9s0XzqPgfIBpidGOa7ZzEc6v4XtVp1608bPFZgYTVGzIdTl
+      2tPzBXazxlExynDKwDfSXf+wleIRIjzEzZkxtrd2mJu71tV41YjyhS+8TbVaJRLUye7luXZt
+      oTsZ+GQ3d1lYvEGrcoSrdTsPlcX5KQ5LDV579SbbW9vMzXenA4AeSZFOREiH5tjcOex6HhOz
+      82xu7TA7v4zTKGErIT7vUSCjQJIrzUAtgSSSbpEGILnSSAO4zAifSrlEs2W98DLbaj9z1prn
+      2Diy695gOcFXDqfKN//wj4kYKt/4219nazvP4swo2Z09xmeu4VkNVODe977P67/0C+ysPGZ+
+      epRvfuvbfOWLN/GTixjmAYnxeexagXLD5tYrN1Cv0Kkk0gAuOS2zQWZsjm//ybd568YUf/S/
+      7jDx+vusf/v/guJhADoK9XKRUn6bfM1meGSMuO5yZ+UTIqMzlP7sT3HaLcaTQUrzN8hE+j2r
+      nx1yCXSZUVSuv/Iaf+sbf5Pp0TSrW0dMjCTZeHSfobFpFNei2nKIRKMUjw7Rw3Gi0Qia26Dh
+      KAyPTdDIZYmnR0mnh4lGYydJiVcIGQYdMIo7a1SMMRbHk/1W5VIgDUBypfl/LfxCwh/p8QsA
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Query3' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
